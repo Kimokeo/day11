@@ -1,0 +1,16 @@
+<h1>Edit Cars</h1>
+<%= link_to "Home Page", root_path %>
+
+<%= form_for @car do |f| %>
+	<%= f.label :make %>
+	<%= f.text_field :make %>
+	<br>
+	<%= f.label :model %>
+	<%= f.text_field :model %>
+	<br>
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+	<br>
+	
+	<%= f.submit %>
+<% end %>

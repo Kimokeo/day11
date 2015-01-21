@@ -1,0 +1,16 @@
+<h1> Lets bake a car </h1>
+<%= link_to "Home Page", root_path %>
+
+<%= form_for :car, url: cars_path do |f| %>
+
+	<%= f.label :make %>
+	<%= f.text_field :make %>
+	<br>
+	<%= f.label :model %>
+	<%= f.text_field :model%>
+	<br>
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+	<br>
+	<%= f.submit %>
+<% end %>

@@ -1,0 +1,17 @@
+<h1> Welcome to Carbay </h1>
+
+
+<%= link_to "Create Car", new_car_path %>
+
+<ul>
+	<% @cars.each do |car| %>
+		<li>
+			
+			<%= link_to car.make, car_path(car) %>
+			<%= link_to "Edit", edit_car_path(car) %>
+			<%= link_to "Delete", car_path(car), method: :delete %>
+			<br>
+
+		</li>
+	<% end %>
+</ul>
